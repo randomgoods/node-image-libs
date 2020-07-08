@@ -1,6 +1,6 @@
 # node-image-libs
 
-TODO
+Node container image including libs for image editing 
 
 ## Contributions
 
