@@ -1,5 +1,7 @@
 # node-image-libs
 
+[![Rebuild Status](https://github.com/frncsdrk/avatar/workflows/rebuild/badge.svg)](https://github.com/frncsdrk/avatar/actions)
+
 Node container image including libs for image editing 
 
 ## Contributions
