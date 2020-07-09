@@ -1,6 +1,6 @@
 # node-image-libs
 
-[![Rebuild Status](https://github.com/frncsdrk/avatar/workflows/rebuild/badge.svg)](https://github.com/frncsdrk/avatar/actions)
+[![Rebuild Status](https://github.com/randomgoods/node-image-libs/workflows/rebuild/badge.svg)](https://github.com/randomgoods/node-image-libs/actions)
 
 Node container image including libs for image editing 
 
