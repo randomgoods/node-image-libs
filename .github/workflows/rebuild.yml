@@ -14,6 +14,7 @@ jobs:
           image: randomgoods/node-image-libs
           registry: docker.io
           tag: latest
+          dockerfile: /latest/debian/Dockerfile
           directory: /latest/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -22,6 +23,7 @@ jobs:
           image: randomgoods/node-image-libs
           registry: docker.io
           tag: slim
+          dockerfile: /latest/slim/Dockerfile
           directory: /latest/slim
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -30,6 +32,7 @@ jobs:
           image: randomgoods/node-image-libs
           registry: docker.io
           tag: lts
+          dockerfile: /lts/debian/Dockerfile
           directory: /lts/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -38,6 +41,7 @@ jobs:
           image: randomgoods/node-image-libs
           registry: docker.io
           tag: lts-slim
+          dockerfile: /lts/slim/Dockerfile
           directory: /lts/slim
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
