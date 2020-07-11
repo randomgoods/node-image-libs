@@ -2,7 +2,7 @@ name: rebuild
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
           registry: docker.io
           tag: latest
           dockerfile: latest/debian/Dockerfile
-          directory: /latest/debian
+          directory: latest/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: mr-smithers-excellent/docker-build-push@v3
@@ -24,7 +24,7 @@ jobs:
           registry: docker.io
           tag: slim
           dockerfile: latest/slim/Dockerfile
-          directory: /latest/slim
+          directory: latest/slim
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: mr-smithers-excellent/docker-build-push@v3
@@ -33,7 +33,7 @@ jobs:
           registry: docker.io
           tag: lts
           dockerfile: lts/debian/Dockerfile
-          directory: /lts/debian
+          directory: lts/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: mr-smithers-excellent/docker-build-push@v3
@@ -42,6 +42,6 @@ jobs:
           registry: docker.io
           tag: lts-slim
           dockerfile: lts/slim/Dockerfile
-          directory: /lts/slim
+          directory: lts/slim
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
