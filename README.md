@@ -2,7 +2,15 @@
 
 [![Rebuild Status](https://github.com/randomgoods/node-image-libs/workflows/rebuild/badge.svg)](https://github.com/randomgoods/node-image-libs/actions)
 
-Node container image including libs for image editing 
+Node container image including libs for image editing, rebuild with the newest base images weekly
+
+## Included libraries
+
+- libcairo2-dev
+- libpango1.0-dev
+- libjpeg-dev
+- libgif-dev
+- librsvg2-dev
 
 ## Contributions
 
