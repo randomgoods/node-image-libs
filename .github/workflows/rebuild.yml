@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: mr-smithers-excellent/docker-build-push@v3
+      - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: randomgoods/node-image-libs
           registry: docker.io
@@ -18,7 +18,7 @@ jobs:
           directory: latest/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-      - uses: mr-smithers-excellent/docker-build-push@v3
+      - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: randomgoods/node-image-libs
           registry: docker.io
@@ -27,7 +27,7 @@ jobs:
           directory: latest/slim
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-      - uses: mr-smithers-excellent/docker-build-push@v3
+      - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: randomgoods/node-image-libs
           registry: docker.io
@@ -36,7 +36,7 @@ jobs:
           directory: lts/debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-      - uses: mr-smithers-excellent/docker-build-push@v3
+      - uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: randomgoods/node-image-libs
           registry: docker.io
