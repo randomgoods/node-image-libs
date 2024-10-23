@@ -1,4 +1,4 @@
-FROM node:lts
+FROM docker.io/library/node:lts
 
 RUN apt update \
     && apt upgrade -y \

@@ -1,4 +1,4 @@
-FROM node:lts-slim
+FROM docker.io/library/node:lts-slim
 
 RUN apt update \
     && apt upgrade -y \

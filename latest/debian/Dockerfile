@@ -1,4 +1,4 @@
-FROM node:latest
+FROM docker.io/library/node:latest
 
 RUN apt update \
     && apt upgrade -y \

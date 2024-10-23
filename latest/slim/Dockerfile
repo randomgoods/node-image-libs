@@ -1,4 +1,4 @@
-FROM node:slim
+FROM docker.io/library/node:slim
 
 RUN apt update \
     && apt upgrade -y \
